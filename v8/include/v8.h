@@ -3288,9 +3288,7 @@ class V8_EXPORT String : public Name {
     const char* operator*() const { return str_; }
     int length() const { return length_; }
 
-    // Disallow copying and assigning.
-    Utf8Value(const Utf8Value&) = delete;
-    void operator=(const Utf8Value&) = delete;
+      void operator=(const Utf8Value&) = delete;
 
    private:
     char* str_;
